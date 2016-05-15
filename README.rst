@@ -37,6 +37,11 @@ Now, when you use ``django.core.mail.send_mail``, Mailgun will send the messages
 Extra features
 =================
 
+HTML content
+------------
+
+You must use the ``attach_alternative`` method of sending HTML email - setting ``content_subtype`` is not currently supported. For more info see Django's `documentation <https://docs.djangoproject.com/en/1.9/topics/email/#sending-alternative-content-types>`_.
+
 Passing user-specific data
 --------------------------
 
